@@ -1,0 +1,24 @@
+Plan after installing npm packages 
+
+1. make a models directory and a database directory with a connection.js file which will initalise sequlize
+   - Models User , Board and Cheese and a database dir called db and will contain connection.js and the .sqlite file
+   - dont complete the models yet
+   - commit and push to github repo
+
+
+2. Make the tests for the models in a new dir called tests
+    - make a new dir called testes
+    - test each model can use .create correctly and returns the desired result
+    - commit and push to github repo
+
+3. Complete models and add there relationships in a index.js file on the root of the project 
+    - complete the models by adding the datatypes of each model eg name:DataTypes.STRING
+    - make a index.js file in the modules folder this will export all the modules together 
+    - touch a index.js file to the root of the project this is where the relationships of each module will be defined 
+    - define relationships
+    - commit and push to github 
+
+4. Write the tests that will show that the relationships are working
+    - A board can be loaded with its cheeses
+    - A user can be loaded with its boards
+    - A cheese can be loaded with its board data
